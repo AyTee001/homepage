@@ -255,3 +255,23 @@ body {
 .additional-info__education-university-name {
     color: var(--secondary-text-color);
 }
+
+/*MORE FACTS ABOUT ME SECTION*/
+.more-info-header{
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hobbies-and-goals__header, .likes-dislikes__header{
+    color: var(--primary-text-color);
+    text-align: left;
+    margin-bottom: 10px;
+}
+.hobbies-and-goals, .likes-dislikes{
+    margin: 20px;
+}
+
+.hobbies-and-goals__list, .likes-dislikes__list{
+    color: var(--secondary-text-color);
+}
