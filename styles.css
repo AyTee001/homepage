@@ -170,9 +170,32 @@ body {
     margin-bottom: 15px;
 }
 
-.skills__text {
-    color: var(--secondary-text-color);
-    text-align: justify;
+.skill-block-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+
+}
+
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    flex: 0 0 30%;
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--text-decoration-color);
+    border-radius: 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #fff;
+  }
+
+  .skill-list{
+    text-align: left;
+    margin: 8px auto;
 }
 
 /*EXPERIENCE AND ADDITIONAL INFO STYLES*/
@@ -200,29 +223,6 @@ body {
     text-decoration-line: underline;
     text-align: left;
     margin-bottom: 20px;
-}
-
-.experiences__company-project {
-    margin-left: 15px;
-    margin-bottom: 25px;
-}
-
-.experiences__company-project-role {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.experiences__company-project-name {
-    color: var(--primary-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.experiences__company-project-responsibilities {
-    color: var(--secondary-text-color);
-    padding-left: 20px;
 }
 
 .additional-info {
@@ -256,16 +256,22 @@ body {
     color: var(--secondary-text-color);
 }
 
-.additional-info__languages {
-    margin-bottom: 20px;
-}
-
-.additional-info__languages-header {
+/*MORE FACTS ABOUT ME SECTION*/
+.more-info-header{
     color: var(--secondary-text-color);
-    text-align: left;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.additional-info__languages-item {
+.hobbies-and-goals__header, .likes-dislikes__header{
+    color: var(--primary-text-color);
+    text-align: left;
+    margin-bottom: 10px;
+}
+.hobbies-and-goals, .likes-dislikes{
+    margin: 20px;
+}
+
+.hobbies-and-goals__list, .likes-dislikes__list{
     color: var(--secondary-text-color);
 }
