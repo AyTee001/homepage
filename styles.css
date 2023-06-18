@@ -13,8 +13,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #6e88b7;
+    --text-decoration-color: #8aaae5;
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
 .fh {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .fv {
@@ -47,6 +47,10 @@ body {
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 30px;
     margin-bottom: 15px;
+}
+
+.info-paragraph{
+    color: var(--primary-text-color);
 }
 
 @media screen and (max-width: 576px) {
@@ -90,7 +94,7 @@ body {
 .contact-info__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contact-info__block--center {
@@ -126,8 +130,8 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
@@ -166,9 +170,32 @@ body {
     margin-bottom: 15px;
 }
 
-.skills__text {
-    color: var(--secondary-text-color);
-    text-align: justify;
+.skill-block-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+
+}
+
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    flex: 0 0 30%;
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--text-decoration-color);
+    border-radius: 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #fff;
+  }
+
+  .skill-list{
+    text-align: left;
+    margin: 8px auto;
 }
 
 /*EXPERIENCE AND ADDITIONAL INFO STYLES*/
@@ -196,29 +223,6 @@ body {
     text-decoration-line: underline;
     text-align: left;
     margin-bottom: 20px;
-}
-
-.experiences__company-project {
-    margin-left: 15px;
-    margin-bottom: 25px;
-}
-
-.experiences__company-project-role {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.experiences__company-project-name {
-    color: var(--primary-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.experiences__company-project-responsibilities {
-    color: var(--secondary-text-color);
-    padding-left: 20px;
 }
 
 .additional-info {
@@ -252,16 +256,22 @@ body {
     color: var(--secondary-text-color);
 }
 
-.additional-info__languages {
-    margin-bottom: 20px;
-}
-
-.additional-info__languages-header {
+/*MORE FACTS ABOUT ME SECTION*/
+.more-info-header{
     color: var(--secondary-text-color);
-    text-align: left;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.additional-info__languages-item {
+.hobbies-and-goals__header, .likes-dislikes__header{
+    color: var(--primary-text-color);
+    text-align: left;
+    margin-bottom: 10px;
+}
+.hobbies-and-goals, .likes-dislikes{
+    margin: 20px;
+}
+
+.hobbies-and-goals__list, .likes-dislikes__list{
     color: var(--secondary-text-color);
 }
