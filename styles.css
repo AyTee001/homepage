@@ -13,8 +13,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #6e88b7;
+    --text-decoration-color: #8aaae5;
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
 .fh {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .fv {
@@ -47,6 +47,10 @@ body {
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 30px;
     margin-bottom: 15px;
+}
+
+.info-paragraph{
+    color: var(--primary-text-color);
 }
 
 @media screen and (max-width: 576px) {
@@ -90,7 +94,7 @@ body {
 .contact-info__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contact-info__block--center {
@@ -126,8 +130,8 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
