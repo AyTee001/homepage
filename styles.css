@@ -170,9 +170,32 @@ body {
     margin-bottom: 15px;
 }
 
-.skills__text {
-    color: var(--secondary-text-color);
-    text-align: justify;
+.skill-block-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+
+}
+
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    flex: 0 0 30%;
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--text-decoration-color);
+    border-radius: 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #fff;
+  }
+
+  .skill-list{
+    text-align: left;
+    margin: 8px auto;
 }
 
 /*EXPERIENCE AND ADDITIONAL INFO STYLES*/
